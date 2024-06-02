@@ -1,0 +1,126 @@
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 15px;
+  margin: 33px 0 50px 0;
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    height: 95px;
+    border-radius: 23px;
+    box-shadow: 0px 15px 27px -2px #00000026;
+    margin-bottom: 10px;
+
+    img {
+      width: initial;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 4px;
+    color: var(--main-black);
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 700;
+    max-width: 600px;
+    text-align: center;
+    color: var(--main-black);
+    margin-bottom: 20px;
+
+    @media only screen and (max-width: 992px) {
+      font-size: 36px;
+      line-height: 46px;
+    }
+
+    @media only screen and (max-width: 320px) {
+      font-size: 30px;
+      line-height: 42px;
+    }
+
+    strong {
+      color: var(--green);
+      margin-right: 10px;
+    }
+
+    &--frame {
+      border: 2px solid var(--main-black);
+      padding: 0 6px;
+      position: relative;
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        background-color: var(--main-black);
+        position: absolute;
+        border-radius: 100%;
+      }
+
+      .dot.left {
+        top: -5px;
+        left: -6px;
+      }
+
+      .dot.right {
+        top: -5px;
+        right: -6px;
+      }
+
+      .dot.bottom-right {
+        bottom: -5px;
+        right: -6px;
+      }
+
+      .dot.bottom-left {
+        bottom: -5px;
+        left: -6px;
+      }
+    }
+  }
+
+  &__description {
+    font-family: 'Inter', sans-serif;
+    font-size: 19px;
+    line-height: 32px;
+    color: var(--main-black);
+    max-width: 540px;
+    text-align: center;
+    margin-bottom: 24px;
+
+    @media only screen and (max-width: 992px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__buttons {
+    margin-bottom: 72px;
+
+    @media only screen and (max-width: 992px) {
+      margin-bottom: 0;
+    }
+
+    @media only screen and (max-width: 320px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+
+      .button-component:first-child {
+        margin-right: 0 !important;  
+        margin-bottom: 20px;    
+      }
+    }
+  }
+}

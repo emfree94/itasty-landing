@@ -1,0 +1,97 @@
+.eco-menu {
+  margin-bottom: 130px;
+
+  @media only screen and (max-width: 1024px) {
+    margin-bottom: 50px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    margin-bottom: 30px;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+    padding: 70px 70px 0 70px;
+    border-radius: 20px;
+    max-height: 480px;
+
+    @media only screen and (max-width: 1024px) {
+      flex-direction: column;
+      padding: 70px 35px;
+      max-height: initial;
+    }
+
+    @media only screen and (max-width: 480px) {
+      padding: 70px 15px;
+    }
+
+    &--left {
+      max-width: 610px;
+      width: 100%;
+
+      @media only screen and (max-width: 1024px) {
+        max-width: initial;
+      }
+
+      &__title {
+        font-size: 60px;
+        line-height: 72px;
+        color: var(--main-black);
+        font-weight: 700;
+        margin-bottom: 20px;
+
+        @media only screen and (max-width: 1024px) {
+          font-size: 55px;
+          line-height: 70px;
+        }
+
+        @media only screen and (max-width: 480px) {
+          font-size: 37px;
+          line-height: 45px;
+        }
+      }
+
+      ul {
+        margin-left: 10px;
+
+        @media only screen and (max-width: 1024px) {
+          margin-bottom: 60px;
+        }
+
+        li:first-child {
+          margin-bottom: 40px;
+        }
+
+        li {
+          padding-left: 20px;
+          position: relative;
+          font-size: 22px;
+          line-height: 40px;
+          font-weight: 500;
+          color: var(--main-black);
+
+          @media only screen and (max-width: 480px) {
+            font-size: 18px;
+            line-height: 31px;
+          }
+        }
+
+        li:before {
+          content: '\2022';
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+
+    &--right {
+      @media only screen and (max-width: 1024px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

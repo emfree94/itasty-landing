@@ -1,0 +1,11 @@
+{
+  "header": {
+    "qr": "QR",
+    "pricing": "Ціни",
+    "aboutUs": "Про нас",
+    "contactUs": "Зв'яжіться з нами"
+  },
+  "button": {
+    "getItNow": "Отримайте зараз"
+  }
+}

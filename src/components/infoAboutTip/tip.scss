@@ -1,0 +1,116 @@
+.tip {
+  margin-bottom: 66px;
+
+  @media only screen and (max-width: 1024px) {
+    margin-bottom: 50px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    margin-bottom: 30px;
+  }
+
+  &__block {
+    display: flex;
+    background-color: var(--white);
+    padding: 70px 70px 70px 45px;
+    border-radius: 20px;
+
+    @media only screen and (max-width: 1024px) {
+      flex-direction: column-reverse;
+      padding: 70px 35px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      padding: 70px 15px;
+    }
+
+    &--right {
+      display: flex;
+      flex-direction: column;
+      margin-left: 60px;
+
+      @media only screen and (max-width: 1024px) {
+        margin-left: 0;
+      }
+
+      &__info:last-child {
+        margin-bottom: 0;
+
+        @media only screen and (max-width: 1024px) {
+          margin-bottom: 60px;
+        }
+
+        @media only screen and (max-width: 480px) {
+          margin-bottom: 30px;
+        }
+      }
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px;
+        max-width: 520px;
+
+        @media only screen and (max-width: 1024px) {
+          max-width: initial;
+        }
+
+        @media only screen and (max-width: 480px) {
+          margin-bottom: 30px;
+        }
+
+        &--title {
+          font-size: 43px;
+          line-height: 55px;
+          font-weight: 700;
+          color: var(--main-black);
+          max-width: 330px;
+          margin-bottom: 20px;
+
+          @media only screen and (max-width: 1024px) {
+            max-width: initial;
+            font-size: 32px;
+            line-height: 38px;
+          }
+        }
+
+        &--list {
+          li {
+            padding-left: 20px;
+            font-size: 20px;
+            line-height: 33px;
+            font-weight: 500;
+            color: var(--main-black);
+            position: relative;
+
+            @media only screen and (max-width: 480px) {
+              font-size: 18px;
+              line-height: 31px;
+            }
+          }
+
+          li:before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+          }
+        }
+      }
+    }
+
+    &--left {
+      @media only screen and (max-width: 1024px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @media only screen and (max-width: 480px) {
+        img {
+          max-height: 300px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

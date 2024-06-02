@@ -1,0 +1,138 @@
+.faq {
+  margin-bottom: 50px;
+
+  @media only screen and (max-width: 1024px) {
+    margin-bottom: 50px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    margin-bottom: 30px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    padding: 108px 108px 78px 108px;
+    border-radius: 20px;
+
+    @media only screen and (max-width: 1024px) {
+      padding: 70px 35px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      padding: 70px 15px;
+    }
+
+    &--title {
+      font-size: 60px;
+      line-height: 72px;
+      font-weight: 700;
+      color: var(--main-black);
+      margin-bottom: 40px;
+
+      @media only screen and (max-width: 480px) {
+        font-size: 37px;
+        line-height: 45px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+#panel1-header {
+  line-height: 40px;
+  font-size: 30px;
+  font-weight: 600;
+  border-bottom: none !important;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 26px;
+    line-height: 35px;
+  }
+}
+
+#panel1-header-children {
+  border-bottom: 1px solid var(--main-black);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+#panel1-header-children:last-child {
+  border-bottom: none;
+}
+
+.MuiButtonBase-root {
+  padding: 0 !important;
+}
+
+.MuiAccordionSummary-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.MuiPaper-root {
+  box-shadow: initial !important;
+}
+
+.css-yw020d-MuiAccordionSummary-expandIconWrapper {
+  border-radius: 100%;
+  border: 2px solid var(--main-black);
+
+  @media only screen and (max-width: 1024px) {
+    margin-left: 20px !important;
+  }
+}
+
+.css-1f773le-MuiButtonBase-root-MuiAccordionSummary-root {
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 500;
+  color: var(--main-black);
+
+  @media only screen and (max-width: 480px) {
+    font-size: 21px;
+    line-height: 32px;
+  }
+}
+
+.css-15v22id-MuiAccordionDetails-root {
+  font-size: 17px;
+  line-height: 40px;
+  font-weight: 500;
+  color: var(--main-black);
+
+  @media only screen and (max-width: 480px) {
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+
+.css-eqpfi5-MuiAccordionSummary-content.Mui-expanded {
+  margin: 0 !important;
+}
+
+.css-15v22id-MuiAccordionDetails-root {
+  padding: 0 !important;
+}
+
+.MuiAccordionSummary-expandIconWrapper.Mui-expanded.css-yw020d-MuiAccordionSummary-expandIconWrapper {
+  border-color: var(--green);
+
+  svg {
+    color: var(--green);
+  }
+}
+
+.css-1086bdv-MuiPaper-root-MuiAccordion-root::before {
+  position: initial !important;
+}
+
+.css-eqpfi5-MuiAccordionSummary-content {
+  @media only screen and (max-width: 1024px) {
+    // margin: 12px 20px !important;
+  }
+}
+
+.css-yw020d-MuiAccordionSummary-expandIconWrapper {
+}

@@ -1,0 +1,48 @@
+.animation-line {
+  margin-bottom: 50px;
+
+  @media only screen and (max-width: 480px) {
+    margin-bottom: 30px;
+  }
+
+  &__swiper {
+    .swiper-wrapper {
+      padding: 0;
+    }
+  }
+}
+
+.animation-list {
+  font-size: 41px;
+  line-height: 50px;
+  font-weight: 500;
+  color: var(--green);
+  white-space: nowrap;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 32px;
+    line-height: 41px;
+  }
+}
+
+.animation-line__list {
+  list-style: inside;
+}
+
+.animation-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: var(--green);
+  margin-right: 30px;
+}
+
+.animation-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.swiper-slide {
+  width: auto !important;
+}

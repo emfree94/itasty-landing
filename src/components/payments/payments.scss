@@ -1,0 +1,118 @@
+.payments {
+  margin-bottom: 80px;
+
+  @media only screen and (max-width: 1024px) {
+    margin-bottom: 50px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    margin-bottom: 30px;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+    padding: 70px;
+    border-radius: 20px;
+
+    @media only screen and (max-width: 1024px) {
+      flex-direction: column;
+      padding: 70px 35px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      padding: 70px 15px;
+    }
+
+    &--left {
+      max-width: 600px;
+      width: 100%;
+      margin-right: 60px;
+
+      @media only screen and (max-width: 1024px) {
+        margin-right: 0;
+        max-width: initial;
+      }
+
+      &__title {
+        font-size: 60px;
+        line-height: 72px;
+        color: var(--main-black);
+        font-weight: 700;
+        margin-bottom: 40px;
+
+        @media only screen and (max-width: 1024px) {
+          margin-bottom: 20px;
+        }
+
+        @media only screen and (max-width: 480px) {
+          font-size: 37px;
+          line-height: 45px;
+        }
+      }
+
+      &__list {
+        margin-bottom: 50px;
+
+        li {
+          padding-left: 20px;
+          position: relative;
+          font-size: 22px;
+          line-height: 40px;
+          font-weight: 500;
+          color: var(--main-black);
+
+          @media only screen and (max-width: 480px) {
+            font-size: 18px;
+            line-height: 31px;
+          }
+        }
+
+        li:before {
+          content: '\2022';
+          position: absolute;
+          left: 0;
+        }
+      }
+
+      &__description {
+        font-size: 22px;
+        line-height: 40px;
+        font-weight: 500;
+        color: var(--main-black);
+
+        @media only screen and (max-width: 1024px) {
+          margin-bottom: 60px;
+        }
+      }
+    }
+
+    &--right {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+
+      @media only screen and (max-width: 1024px) {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 25px;
+      }
+
+      @media only screen and (max-width: 480px) {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+      }
+
+      &__img {
+        max-width: 177px;
+        width: fit-content;
+
+        @media only screen and (max-width: 1024px) {
+          max-width: initial;
+        }
+      }
+    }
+  }
+}

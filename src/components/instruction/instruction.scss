@@ -1,0 +1,128 @@
+.instruction {
+  margin-bottom: 50px;
+
+  @media only screen and (max-width: 480px) {
+    margin-bottom: 30px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    padding: 70px 50px 70px 70px;
+    border-radius: 20px;
+
+    @media only screen and (max-width: 1024px) {
+      padding: 70px 35px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      padding: 70px 15px;
+    }
+
+    &--title {
+      font-size: 65px;
+      font-weight: 700;
+      line-height: 72px;
+      margin-bottom: 70px;
+      color: var(--main-black);
+
+      @media only screen and (max-width: 480px) {
+        font-size: 37px;
+        line-height: 45px;
+        margin-bottom: 50px;
+      }
+    }
+
+    &--wrapper-step {
+      display: flex;
+      gap: 20px;
+
+      @media only screen and (max-width: 1024px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-self: flex-start;
+        gap: 42px 80px;
+      }
+
+      @media only screen and (max-width: 480px) {
+        gap: 25px;
+      }
+
+      @media only screen and (max-width: 360px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      img {
+        margin-bottom: 27px;
+        height: 110px;
+        object-fit: contain;
+      }
+
+      &__step {
+        flex: 1;
+
+        @media only screen and (max-width: 1024px) {
+          max-width: 300px;
+        }
+
+        @media only screen and (max-width: 480px) {
+          margin-bottom: 20px;
+        }
+
+        @media only screen and (max-width: 360px) {
+          max-width: initial;
+        }
+
+        &--line {
+          display: flex;
+          align-items: center;
+          margin-bottom: 7px;
+
+          &__dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--main-black);
+            border-radius: 100%;
+          }
+
+          &__arrow {
+            width: 100%;
+            height: 1px;
+            background-color: var(--main-black);
+            position: relative;
+            margin-left: 10px;
+            margin-right: 15px;
+          }
+
+          &__arrow:before {
+            content: '';
+            position: absolute;
+            top: -4.5px;
+            right: 1px;
+            width: 10px;
+            height: 10px;
+            border-top: 1px solid var(--main-black);
+            border-right: 1px solid var(--main-black);
+            transform: rotate(45deg);
+          }
+        }
+
+        &--subtitle {
+          font-size: 22px;
+          line-height: 40px;
+          font-weight: 700;
+          color: var(--main-black);
+          margin-bottom: 7px;
+        }
+
+        &--description {
+          font-size: 17px;
+          line-height: 30px;
+          font-weight: 500;
+          color: var(--main-black);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "header": {
+    "qr": "QR",
+    "pricing": "Pricing",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us"
+  },
+  "button": {
+    "getItNow": "Get it now"
+  }
+}

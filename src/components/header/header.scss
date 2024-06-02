@@ -1,0 +1,162 @@
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  background: var(--light-blue);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 150;
+  box-shadow: 0px 4px 4px 0px #00000017;
+
+  &.hidden {
+    background-color: transparent;
+  }
+
+  @media only screen and (max-width: 992px) {
+    padding: 28px 15px;
+  }
+
+  @media only screen and (max-width: 640px) {
+    padding: 13px;
+  }
+
+  .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 57px;
+    padding: 0px 30px;
+
+    @media only screen and (max-width: 1024px) {
+      padding: 0px;
+    }
+
+    img {
+      width: initial;
+      cursor: pointer;
+    }
+
+    .logo {
+      margin-right: 36px;
+    }
+
+    &--menu {
+      display: none;
+      width: initial;
+
+      @media only screen and (max-width: 640px) {
+        display: block;
+      }
+    }
+
+    &--block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media only screen and (max-width: 640px) {
+        display: none;
+      }
+
+      &__links {
+        margin-right: 25px;
+
+        ul {
+          display: flex;
+          gap: 25px;
+
+          li a {
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: 500;
+            color: var(--main-black);
+          }
+        }
+      }
+    }
+
+    .language {
+      margin-right: 36px;
+
+      @media only screen and (max-width: 640px) {
+        display: none;
+      }
+    }
+
+    .button-component {
+      @media only screen and (max-width: 1024px) {
+        margin-right: 15px;
+      }
+
+      @media only screen and (max-width: 640px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.mobile-menu {
+  width: 100%;
+  height: 100dvh;
+  position: fixed;
+  right: -100%;
+  top: 0;
+  transition: 0.6s ease-out;
+  z-index: 100;
+  background-color: var(--white);
+  display: none;
+  flex-direction: column;
+
+  @media only screen and (max-width: 640px) {
+    display: flex;
+  }
+  img {
+    width: initial;
+    cursor: pointer;
+  }
+
+  &.active {
+    right: 0;
+  }
+
+  &__head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    li {
+      margin-bottom: 30px;
+
+      a {
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 500;
+        color: var(--main-black);
+      }
+
+      &:last-child {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .button-component {
+      padding: 17px 35px !important;
+    }
+  }
+}

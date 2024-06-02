@@ -1,0 +1,31 @@
+.trust {
+  margin-bottom: 65px;
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+    padding: 70px;
+    border-radius: 20px;
+
+    @media only screen and (max-width: 1024px) {
+      padding: 70px 35px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      padding: 70px 15px;
+    }
+
+    &--title {
+      line-height: 72px;
+      font-size: 60px;
+      font-weight: 700;
+      color: var(--main-black);
+
+      @media only screen and (max-width: 480px) {
+        font-size: 37px;
+        line-height: 45px;
+      }
+    }
+  }
+}

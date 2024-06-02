@@ -1,0 +1,70 @@
+.transition-modal-title {
+  font-size: 60px !important;
+  line-height: 72px !important;
+  font-weight: 700 !important;
+  color: var(--main-black) !important;
+  margin-bottom: 7px !important;
+
+  @media only screen and (max-width: 992px) {
+    font-size: 42px !important;
+    line-height: 50px !important;
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 32px !important;
+    line-height: 42px !important;
+  }
+}
+
+.transition-modal-description {
+  font-size: 22px !important;
+  line-height: 40px !important;
+  font-weight: 500 !important;
+  color: var(--main-black) !important;
+  margin-bottom: 25px !important;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 18px !important;
+    line-height: 24px !important;
+  }
+}
+
+.MuiBox-root {
+  padding: 70px 150px 120px 150px !important;
+  width: 100% !important;
+  border-radius: 30px;
+  max-width: 1000px;
+  border: none !important;
+
+  .wrapper-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    img {
+      margin-bottom: 30px;
+      max-width: 253px;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    max-width: 600px !important;
+    padding: 70px 60px !important;
+  }
+
+  @media only screen and (max-width: 680px) {
+    padding: 40px 40px 0 40px !important;
+    max-width: 400px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 480px) {
+    padding: 25px 25px 0 25px !important;
+    max-width: 300px !important;
+  }
+}
