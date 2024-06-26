@@ -1,11 +1,11 @@
 import React from 'react'
-import przelewyImg from '../../../public/assets/img/przelewy24.png'
-import mbankImg from '../../../public/assets/img/mbank.png'
-import ingImg from '../../../public/assets/img/ing.png'
-import payuImg from '../../../public/assets/img/payu.png'
-import blinkImg from '../../../public/assets/img/blik.png'
-import stripeImg from '../../../public/assets/img/stripe.png'
-import tpay from '../../../public/assets/img/image442.png'
+import przelewyImg from '/assets/img/przelewy24.png'
+import mbankImg from '/assets/img/mbank.png'
+import ingImg from '/assets/img/ing.png'
+import payuImg from '/assets/img/payu.png'
+import blinkImg from '/assets/img/blik.png'
+import stripeImg from '/assets/img/stripe.png'
+import tpay from '/assets/img/image442.png'
 import './payments.scss'
 
 export const Payments = () => {

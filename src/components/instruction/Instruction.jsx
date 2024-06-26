@@ -1,9 +1,9 @@
 import React from 'react'
 import './instruction.scss'
-import registration from '../../../public/assets/regist.svg'
-import iconMenu from '../../../public/assets/icon-menu.svg'
-import qrIcon from '../../../public/assets/qr.svg'
-import frame from '../../../public/assets/img/group2.png'
+import registration from '/assets/regist.svg'
+import iconMenu from '/assets/icon-menu.svg'
+import qrIcon from '/assets/qr.svg'
+import frame from '/assets/img/group2.png'
 
 export const Instruction = () => {
   return (

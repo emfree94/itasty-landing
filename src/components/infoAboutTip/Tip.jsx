@@ -1,6 +1,6 @@
 import React from 'react'
-import iphoneImage from '../../../public/assets/img/iphone.png'
-import responsiveImage from '../../../public/assets/img/popular-item.png'
+import iphoneImage from '/assets/img/iphone.png'
+import responsiveImage from '/assets/img/popular-item.png'
 import './tip.scss'
 
 export const Tip = () => {

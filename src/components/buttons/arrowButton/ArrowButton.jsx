@@ -1,6 +1,6 @@
 import React from 'react'
 import './arrowButton.scss'
-import arrowImg from '../../../../public/assets/ei_arrow-up.svg'
+import arrowImg from '/assets/ei_arrow-up.svg'
 import { handleAnchorClick } from '../../../helpers/anchorClick'
 
 export const ArrowButton = () => {

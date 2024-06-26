@@ -1,6 +1,6 @@
 import React from 'react'
-import phoneImage from '../../../public/assets/img/iphone-bg.png'
-import imgBackground from '../../../public/assets/vector.svg'
+import phoneImage from '/assets/img/iphone-bg.png'
+import imgBackground from '/assets/vector.svg'
 import './qrComponent.scss'
 
 export const QrComponent = () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import iphoneImg from '../../../public/assets/img/iPhone-image.png'
+import iphoneImg from '/assets/img/iPhone-image.png'
 import './ecoMenu.scss'
 
 export const EcoMenu = () => {

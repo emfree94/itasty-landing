@@ -1,5 +1,5 @@
 import React from 'react'
-import analyticsImg from '../../../public/assets/img/analytics-img.png'
+import analyticsImg from '/assets/img/analytics-img.png'
 import './analytics.scss'
 
 export const Analytics = () => {

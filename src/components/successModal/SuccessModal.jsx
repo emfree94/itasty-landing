@@ -5,7 +5,7 @@ import Modal from '@mui/material/Modal'
 import Fade from '@mui/material/Fade'
 import Typography from '@mui/material/Typography'
 import { Button } from '../buttons/button/Button'
-import successImg from '../../../public/assets/img/illustration.png'
+import successImg from '/assets/img/illustration.png'
 import './successModal.scss'
 
 export const SuccessModal = ({ open, handleClose }) => {

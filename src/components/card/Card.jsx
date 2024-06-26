@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import buttonImg from '../../../public/assets/sketchLogo.svg'
+import buttonImg from '/assets/sketchLogo.svg'
 import './card.scss'
 
 export const Card = ({ head, price, period, description, options }) => {
@@ -42,7 +42,11 @@ export const Card = ({ head, price, period, description, options }) => {
       </div>
       <button className="card__button">
         {buttonText === 'Get the premium!' && (
-          <img src={buttonImg} alt="Premium logo" className="card__button--img" />
+          <img
+            src={buttonImg}
+            alt="Premium logo"
+            className="card__button--img"
+          />
         )}
         {buttonText}
       </button>

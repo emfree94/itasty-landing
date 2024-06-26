@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../../public/assets/logo.svg'
+import logo from '/assets/logo.svg'
 import './footer.scss'
 import { Button } from '../buttons/button/Button'
 import { handleAnchorClick } from '../../helpers/anchorClick'

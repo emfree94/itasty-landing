@@ -17,20 +17,20 @@ export const TariffPlan = () => {
 
       card_options: [
         {
-          card_icon: 'public/assets/check-circle.svg',
+          card_icon: '/assets/check-circle.svg',
           card_option_text: 'Customer Support',
         },
         {
-          card_icon: 'public/assets/check-circle.svg',
+          card_icon: '/assets/check-circle.svg',
           card_option_text: 'Free User Account',
         },
         {
-          card_icon: 'public/assets/cross-circle.svg',
+          card_icon: '/assets/cross-circle.svg',
           card_option_text: 'Monthly Reports',
           isError: true,
         },
         {
-          card_icon: 'public/assets/cross-circle.svg',
+          card_icon: '/assets/cross-circle.svg',
           card_option_text: 'Multiple Devices',
           isError: true,
         },
@@ -45,19 +45,19 @@ export const TariffPlan = () => {
         'Lorem ipsum dolor sit amet consectetur. Praesent amet dignissim pretium congue consectetur orci augue mi. Donec cursus lacus laoreet feugiat in fermentum sem purus.',
       card_options: [
         {
-          card_icon: 'public/assets/check-circle.svg',
+          card_icon: '/assets/check-circle.svg',
           card_option_text: 'Customer Support',
         },
         {
-          card_icon: 'public/assets/check-circle.svg',
+          card_icon: '/assets/check-circle.svg',
           card_option_text: 'Upto 10 Users',
         },
         {
-          card_icon: 'public/assets/check-circle.svg',
+          card_icon: '/assets/check-circle.svg',
           card_option_text: 'Monthly Reports',
         },
         {
-          card_icon: 'public/assets/check-circle.svg',
+          card_icon: '/assets/check-circle.svg',
           card_option_text: 'Multiple Devices Supported',
         },
       ],
@@ -71,20 +71,20 @@ export const TariffPlan = () => {
 
       card_options: [
         {
-          card_icon: 'public/assets/check-circle.svg',
+          card_icon: '/assets/check-circle.svg',
           card_option_text: 'Customer Support',
         },
         {
-          card_icon: 'public/assets/check-circle.svg',
+          card_icon: '/assets/check-circle.svg',
           card_option_text: 'Free User Account',
         },
         {
-          card_icon: 'public/assets/cross-circle.svg',
+          card_icon: '/assets/cross-circle.svg',
           card_option_text: 'Monthly Reports',
           isError: true,
         },
         {
-          card_icon: 'public/assets/cross-circle.svg',
+          card_icon: '/assets/cross-circle.svg',
           card_option_text: 'Multiple Devices',
           isError: true,
         },
@@ -99,19 +99,19 @@ export const TariffPlan = () => {
         'Lorem ipsum dolor sit amet consectetur. Praesent amet dignissim pretium congue consectetur orci augue mi. Donec cursus lacus laoreet feugiat in fermentum sem purus.',
       card_options: [
         {
-          card_icon: 'public/assets/check-circle.svg',
+          card_icon: '/assets/check-circle.svg',
           card_option_text: 'Customer Support',
         },
         {
-          card_icon: 'public/assets/check-circle.svg',
+          card_icon: '/assets/check-circle.svg',
           card_option_text: 'Upto 10 Users',
         },
         {
-          card_icon: 'public/assets/check-circle.svg',
+          card_icon: '/assets/check-circle.svg',
           card_option_text: 'Monthly Reports',
         },
         {
-          card_icon: 'public/assets/check-circle.svg',
+          card_icon: '/assets/check-circle.svg',
           card_option_text: 'Multiple Devices Supported',
         },
       ],

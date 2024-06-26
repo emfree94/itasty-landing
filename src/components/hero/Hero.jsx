@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../../public/assets/logo2.svg'
+import logo from '/assets/logo2.svg'
 import './hero.scss'
 import { Button } from '../buttons/button/Button'
 import { scrollToContactUs } from '../../helpers/scrollToContactUs'
