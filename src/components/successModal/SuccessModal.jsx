@@ -5,7 +5,7 @@ import Modal from '@mui/material/Modal'
 import Fade from '@mui/material/Fade'
 import Typography from '@mui/material/Typography'
 import { Button } from '../buttons/button/Button'
-import SuccessImg from '../../assets/img/illustration.png'
+import successImg from '../../../public/assets/img/illustration.png'
 import './successModal.scss'
 
 export const SuccessModal = ({ open, handleClose }) => {
@@ -40,7 +40,7 @@ export const SuccessModal = ({ open, handleClose }) => {
           <Fade in={open}>
             <Box sx={style}>
               <div className="wrapper-img">
-                <img src={SuccessImg} alt="success-img" />
+                <img src={successImg} alt="success-img" />
               </div>
               <Typography className="transition-modal-title" component="h2">
                 Thank you!

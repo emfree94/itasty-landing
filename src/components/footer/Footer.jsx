@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../assets/logo.svg'
+import logo from '../../../public/assets/logo.svg'
 import './footer.scss'
 import { Button } from '../buttons/button/Button'
 import { handleAnchorClick } from '../../helpers/anchorClick'
@@ -16,7 +16,7 @@ export const Footer = () => {
     <footer className="footer">
       <div className="footer__links">
         <div className="footer__links--logo">
-          <img src={Logo} alt="logo" />
+          <img src={logo} alt="logo" />
         </div>
         <div className="footer__links--wrapper">
           <ul>

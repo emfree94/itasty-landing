@@ -1,13 +1,14 @@
 import React from 'react'
-import Logo from '../../assets/logo2.svg'
+import logo from '../../../public/assets/logo2.svg'
 import './hero.scss'
 import { Button } from '../buttons/button/Button'
+import { scrollToContactUs } from '../../helpers/scrollToContactUs'
 
-export const Hero = ({ scrollToContactUs }) => {
+export const Hero = () => {
   return (
     <div className="hero" id="about-us">
       <div className="hero__logo">
-        <img src={Logo} alt="logo" />
+        <img src={logo} alt="logo" />
       </div>
       <p className="hero__text">for your restaurant</p>
       <h1 className="hero__title">
@@ -27,7 +28,11 @@ export const Hero = ({ scrollToContactUs }) => {
         fermentum sem purus.
       </p>
       <div className="hero__buttons">
-        <Button text="Get it now" marginRight={'20px'} />
+        <Button
+          text="Get it now"
+          marginRight={'20px'}
+          handleClick={scrollToContactUs}
+        />
         <Button
           text="Contact us"
           type="secondary"

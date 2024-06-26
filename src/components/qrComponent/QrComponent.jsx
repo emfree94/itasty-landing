@@ -1,6 +1,6 @@
 import React from 'react'
-import PhoneImage from '../../assets/img/iphone-bg.png'
-import ImgBackground from '../../assets/vector.svg'
+import phoneImage from '../../../public/assets/img/iphone-bg.png'
+import imgBackground from '../../../public/assets/vector.svg'
 import './qrComponent.scss'
 
 export const QrComponent = () => {
@@ -8,7 +8,7 @@ export const QrComponent = () => {
     <div className="qr-menu" id='qr'>
       <img
         className="qr-menu__img_bg"
-        src={ImgBackground}
+        src={imgBackground}
         alt="image-background"
       />
       <div className="qr-menu__block wrapper ">
@@ -27,7 +27,7 @@ export const QrComponent = () => {
           </p>
         </div>
         <div className="qr-menu__block--right">
-          <img src={PhoneImage} alt="image-phone" />
+          <img src={phoneImage} alt="image-phone" />
         </div>
       </div>
     </div>

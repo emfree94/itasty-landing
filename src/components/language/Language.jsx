@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import './language.scss';
-import { Button } from '@mui/material';
 
 export const Language = ({showLangList, setShowLangList, languages}) => {
   const { i18n } = useTranslation();

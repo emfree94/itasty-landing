@@ -3,10 +3,10 @@ import { Header } from '../header/Header'
 import { Footer } from '../footer/Footer'
 import { ArrowButton } from '../buttons/arrowButton/ArrowButton'
 
-export const Layout = ({ children, scrollToContactUs }) => {
+export const Layout = ({ children }) => {
   return (
     <>
-      <Header scrollToContactUs={scrollToContactUs} />
+      <Header />
       {children}
       <Footer />
       <ArrowButton />

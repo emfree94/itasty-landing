@@ -1,12 +1,13 @@
-import React, { useState } from 'react'
-import Logo from '../../assets/logo.svg'
-import MenuIcon from '../../assets/jam_menu.svg'
-import CloseIcon from '../../assets/jam_close.svg'
+import React, { useEffect, useState } from 'react'
+import logo from '../../../public/assets/logo.svg'
+import menuIcon from '../../../public/assets/jam_menu.svg'
+import closeIcon from '../../../public/assets/jam_close.svg'
 import './header.scss'
 import { Language } from '../language/Language'
 import { useTranslation } from 'react-i18next'
 import { handleAnchorClick } from '../../helpers/anchorClick'
 import { Button } from '../buttons/button/Button'
+import { scrollToContactUs } from '../../helpers/scrollToContactUs'
 
 const linksData = [
   { name: 'qr', href: '#qr' },
@@ -15,23 +16,49 @@ const linksData = [
   { name: 'contactUs', href: '#contact-us' },
 ]
 
-export const Header = ({ hiddenBackground, scrollToContactUs }) => {
+export const Header = ({ hiddenBackground }) => {
   const { t } = useTranslation()
   const [showLangList, setShowLangList] = useState(false)
   const [showMenu, setShowMenu] = useState(false)
 
   const languages = ['EN', 'PL', 'UKR']
 
+  useEffect(() => {
+    if (showMenu) {
+      document.body.classList.add('no-scroll')
+    } else {
+      document.body.classList.remove('no-scroll')
+    }
+
+    return () => {
+      document.body.classList.remove('no-scroll')
+    }
+  }, [showMenu])
+
+  const handleMobileLinkClick = (e, href) => {
+    handleAnchorClick(e, href)
+    setTimeout(() => {
+      setShowMenu(false)
+    }, 1000)
+  }
+
+  const handleButtonClick = () => {
+    scrollToContactUs()
+    setTimeout(() => {
+      setShowMenu(false)
+    }, 1000)
+  }
+
   return (
     <header className={`header ${hiddenBackground ? 'hidden' : ''}`}>
       <div className="header__wrapper wrapper">
         <div className="logo">
-          <img src={Logo} alt="logo" />
+          <img src={logo} alt="logo" />
         </div>
         <img
           onClick={() => setShowMenu(!showMenu)}
           className="header__wrapper--menu"
-          src={MenuIcon}
+          src={menuIcon}
           alt="hamburger-icon"
         />
         <div className="header__wrapper--block">
@@ -68,7 +95,7 @@ export const Header = ({ hiddenBackground, scrollToContactUs }) => {
             languages={languages}
           />
           <img
-            src={CloseIcon}
+            src={closeIcon}
             alt="close-menu"
             onClick={() => setShowMenu(!showMenu)}
           />
@@ -76,14 +103,14 @@ export const Header = ({ hiddenBackground, scrollToContactUs }) => {
         <ul className="mobile-menu__list">
           {linksData.map(({ name, href }) => (
             <li key={name}>
-              <a href={href} onClick={(e) => handleAnchorClick(e, href)}>
+              <a href={href} onClick={(e) => handleMobileLinkClick(e, href)}>
                 {t(`header.${name}`)}
               </a>
             </li>
           ))}
         </ul>
         <div className="mobile-menu__wrapper">
-          <Button text="Get it now" size="sm" handleClick={scrollToContactUs} />
+          <Button text="Get it now" size="sm" handleClick={handleButtonClick} />
         </div>
       </div>
     </header>

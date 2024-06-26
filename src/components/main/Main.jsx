@@ -13,10 +13,10 @@ import { TariffPlan } from '../tariffPlan/TariffPlan'
 import { ContactUs } from '../contactUs/ContactUs'
 import { QrComponent } from '../qrComponent/QrComponent'
 
-export const Main = ({scrollToContactUs}) => {
+export const Main = () => {
   return (
     <main>
-      <Hero scrollToContactUs={scrollToContactUs} />
+      <Hero />
       <EcoMenu />
       <Payments />
       <Instruction />

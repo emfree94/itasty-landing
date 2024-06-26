@@ -1,5 +1,5 @@
 import React from 'react'
-import IphoneImg from '../../assets/img/iPhone-image.png'
+import iphoneImg from '../../../public/assets/img/iPhone-image.png'
 import './ecoMenu.scss'
 
 export const EcoMenu = () => {
@@ -19,7 +19,7 @@ export const EcoMenu = () => {
           </ul>
         </div>
         <div className="eco-menu__block--right">
-          <img src={IphoneImg} alt='phone-image'/>
+          <img src={iphoneImg} alt='phone-image'/>
         </div>
       </div>
     </div>

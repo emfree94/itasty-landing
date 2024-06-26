@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import buttonImg from '../../assets/sketchLogo.svg'
+import buttonImg from '../../../public/assets/sketchLogo.svg'
 import './card.scss'
 
 export const Card = ({ head, price, period, description, options }) => {

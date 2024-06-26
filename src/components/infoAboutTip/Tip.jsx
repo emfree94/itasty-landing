@@ -1,6 +1,6 @@
 import React from 'react'
-import IphoneImage from '../../assets/img/iphone.png'
-import ResponsiveImage from '../../assets/img/popular-item.png'
+import iphoneImage from '../../../public/assets/img/iphone.png'
+import responsiveImage from '../../../public/assets/img/popular-item.png'
 import './tip.scss'
 
 export const Tip = () => {
@@ -9,8 +9,8 @@ export const Tip = () => {
       <div className="tip__block wrapper">
         <div className="tip__block--left">
           <picture>
-            <source media="(max-width:1024px )" srcSet={ResponsiveImage} />
-            <img src={IphoneImage} alt="iphone-image" />
+            <source media="(max-width:1024px )" srcSet={responsiveImage} />
+            <img src={iphoneImage} alt="iphone-image" />
           </picture>
         </div>
         <div className="tip__block--right">

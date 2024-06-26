@@ -1,5 +1,5 @@
 import React from 'react'
-import AnalyticsImg from '../../assets/img/analytics-img.png'
+import analyticsImg from '../../../public/assets/img/analytics-img.png'
 import './analytics.scss'
 
 export const Analytics = () => {
@@ -24,7 +24,7 @@ export const Analytics = () => {
           </ul>
         </div>
         <div className="analytics__block--right">
-          <img src={AnalyticsImg} alt="analytics-img" />
+          <img src={analyticsImg} alt="analytics-img" />
         </div>
       </div>
     </div>

@@ -1,11 +1,11 @@
 import React from 'react'
-import PrzelewyImg from '../../assets/img/przelewy24.png'
-import MbankImg from '../../assets/img/mbank.png'
-import IngImg from '../../assets/img/ing.png'
-import PayuImg from '../../assets/img/payu.png'
-import BlinkImg from '../../assets/img/blik.png'
-import StripeImg from '../../assets/img/stripe.png'
-import Tpay from '../../assets/img/image442.png'
+import przelewyImg from '../../../public/assets/img/przelewy24.png'
+import mbankImg from '../../../public/assets/img/mbank.png'
+import ingImg from '../../../public/assets/img/ing.png'
+import payuImg from '../../../public/assets/img/payu.png'
+import blinkImg from '../../../public/assets/img/blik.png'
+import stripeImg from '../../../public/assets/img/stripe.png'
+import tpay from '../../../public/assets/img/image442.png'
 import './payments.scss'
 
 export const Payments = () => {
@@ -29,25 +29,25 @@ export const Payments = () => {
 
         <div className="payments__block--right">
           <div className="payments__block--right__img">
-            <img src={PrzelewyImg} alt="image-payment" />
+            <img src={przelewyImg} alt="image-payment" />
           </div>
           <div className="payments__block--right__img">
-            <img src={PayuImg} alt="image-payment" />
+            <img src={payuImg} alt="image-payment" />
           </div>
           <div className="payments__block--right__img">
-            <img src={MbankImg} alt="image-payment" />
+            <img src={mbankImg} alt="image-payment" />
           </div>
           <div className="payments__block--right__img">
-            <img src={BlinkImg} alt="image-payment" />
+            <img src={blinkImg} alt="image-payment" />
           </div>
           <div className="payments__block--right__img">
-            <img src={IngImg} alt="image-payment" />
+            <img src={ingImg} alt="image-payment" />
           </div>
           <div className="payments__block--right__img">
-            <img src={StripeImg} alt="image-payment" />
+            <img src={stripeImg} alt="image-payment" />
           </div>
           <div className="payments__block--right__img">
-            <img src={Tpay} alt="image-payment" />
+            <img src={tpay} alt="image-payment" />
           </div>
         </div>
       </div>

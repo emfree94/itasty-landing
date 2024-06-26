@@ -1,9 +1,9 @@
 import React from 'react'
 import './instruction.scss'
-import Registration from '../../assets/regist.svg'
-import IconMenu from '../../assets/icon-menu.svg'
-import QrIcon from '../../assets/qr.svg'
-import Frame from '../../assets/img/group2.png'
+import registration from '../../../public/assets/regist.svg'
+import iconMenu from '../../../public/assets/icon-menu.svg'
+import qrIcon from '../../../public/assets/qr.svg'
+import frame from '../../../public/assets/img/group2.png'
 
 export const Instruction = () => {
   return (
@@ -13,7 +13,7 @@ export const Instruction = () => {
 
         <div className="instruction__block--wrapper-step">
           <div className="instruction__block--wrapper-step__step">
-            <img src={Registration} alt="registration-icon" />
+            <img src={registration} alt="registration-icon" />
             <div className="instruction__block--wrapper-step__step--line">
               <div className="instruction__block--wrapper-step__step--line__dot" />
               <div className="instruction__block--wrapper-step__step--line__arrow" />
@@ -27,7 +27,7 @@ export const Instruction = () => {
           </div>
 
           <div className="instruction__block--wrapper-step__step">
-            <img src={IconMenu} alt="registration-icon" />
+            <img src={iconMenu} alt="registration-icon" />
             <div className="instruction__block--wrapper-step__step--line">
               <div className="instruction__block--wrapper-step__step--line__dot" />
               <div className="instruction__block--wrapper-step__step--line__arrow" />
@@ -41,7 +41,7 @@ export const Instruction = () => {
           </div>
 
           <div className="instruction__block--wrapper-step__step">
-            <img src={Frame} alt="registration-icon" />
+            <img src={frame} alt="registration-icon" />
             <div className="instruction__block--wrapper-step__step--line">
               <div className="instruction__block--wrapper-step__step--line__dot" />
               <div className="instruction__block--wrapper-step__step--line__arrow" />
@@ -55,7 +55,7 @@ export const Instruction = () => {
           </div>
 
           <div className="instruction__block--wrapper-step__step">
-            <img src={QrIcon} alt="registration-icon" />
+            <img src={qrIcon} alt="registration-icon" />
             <div className="instruction__block--wrapper-step__step--line">
               <div className="instruction__block--wrapper-step__step--line__dot" />
               <div className="instruction__block--wrapper-step__step--line__arrow" />
